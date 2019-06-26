@@ -19,21 +19,32 @@ class TV():
         Docstring >> this will turn the television on/off, depending on whether it's already on/off (if its on it'll switch it off, and vice versa). We'll add a couple of stipulations with this one:
         Each time the television is turned off, it loses a little bit of life - decrease the life_perc by 0.01 each time the television is turned off.
         Each time the television is turned off the channel should be set to 0.
+
         Args:
 
         """
-        if self.on_status = True:
-            self.on_status = False
+        if self.on_status == True:
+            self.on_status == False
             self.current_channel -= 0.01
             self.current_channel = 0
         else:
             on_status = True
+            self.current_channel = 3
 
     def change_channel(self, input_channel):
         """
-        Docstring >> this will take in an int to change the channel to a new one. We'll add a stipulation to this as well:
-        If the television is not on, but the change_channel method is called, print 'Television is not on!'. Otherwise, change the channel to the inputted channel.
+        Docstring >> this will take in an int to change the channel to a new one.
+
+        Args:
+            input_channel: integer
         """
-        self.input_channel = current_channel
-        if self.on_status = False:
+        current_channel = self.current_channel
+
+        if self.on_status == False:
             print("Television is not on!")
+        else:
+            self.input_channel = self.current_channel
+
+############
+Test Data
+############
