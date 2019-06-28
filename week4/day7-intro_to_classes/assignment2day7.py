@@ -28,7 +28,7 @@ class TV():
             self.current_channel -= 0.01
             self.current_channel = 0
         else:
-            on_status = True
+            self.on_status = True
             self.current_channel = 3
 
     def change_channel(self, input_channel):
@@ -45,6 +45,8 @@ class TV():
         else:
             self.input_channel = self.current_channel
 
-############
+"""""
 Test Data
-############
+"""""
+Nick = TV("Nick", True, 54, 54.3)
+Comedy_Central = TV("Comedy Central", True, 54, 54.3)
